@@ -35,6 +35,12 @@ public class OperaçoesAvançadas {
         double resultado = Math.sqrt(raiz);
         return resultado;
     }
+    public double seno (double a){
+        
+        double resultado = Math.sin(a);
+        return resultado;
+    }
+    
     
 
 }

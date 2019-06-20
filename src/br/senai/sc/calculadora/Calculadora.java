@@ -17,8 +17,7 @@ public class Calculadora {
         String aux = "não";
 
         while (true) {
-            System.out.println("Escolha uma operação:\n s - somar \n m - subitrair \n x - multiplicar \n d - dividir \n p - potência \n o - porcentagem "
-                    + "\n a - Área² \n i - IMC \n r - raiz quadrada");
+            System.out.println("Escolha uma operação:\n s - somar \n m - subitrair \n x - multiplicar \n d - dividir \n p - potência \n o - porcentagem \n a - Área² \n i - IMC \n r - raiz quadrada \n 1 - seno");
             System.out.println("----------------------------------");
             System.out.println("Informe a operação: ");
             char operação = leia.next().charAt(0);
@@ -92,11 +91,17 @@ public class Calculadora {
                         System.out.println("Obesidade Grau 3!");
                     }
                     break;
-                    case 'r':
+                case 'r':
                     System.out.println("Raiz Quadrada.");
                     System.out.println("Raiz quadrada de : " + num1);
                     double resultado8 = opA.raizQuadrada(num1);
                     System.out.println("Resultado: " + resultado8);
+                    break;
+                case '1':
+                    System.out.println("Seno.");
+                    System.out.println("Valor : " + num1);
+                    double resultado9 = opA.seno(num1);
+                    System.out.println("Resultado: " + resultado9);
                     break;
             }
             System.out.println("----------------------------------");
